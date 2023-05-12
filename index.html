@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+  <!-- Font Family  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- FontAwsome cdn -->
+  <script src="https://kit.fontawesome.com/6ad5d36874.js" crossorigin="anonymous"></script>
+  <!-- Css style -->
+  <link rel="stylesheet" href="css/style.css">
+  <!--  Js file-->
+  <script src="js/script.js" defer></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <div class="nav-center d-flex">
+          <div class="nav-header d-flex">
+            <button class="nav-toggle">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <h1 class="title"><img src="images/logo.svg" alt="sneakers" srcset=""></h1>
+
+            <div class="nav-links d-none">
+              <ul class="d-flex">
+                <li class="nav-link"><a href="#">Collections</a></li>
+                <li class="nav-link"><a href="#">Men</a></li>
+                <li class="nav-link"><a href="#">Women</a></li>
+                <li class="nav-link"><a href="#">About</a></li>
+                <li class="nav-link"><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="cart-container d-flex">
+            <button class="toggle-cart">
+              <img src="images/icon-cart.svg" alt="cart" srcset="">
+              <span class="cart-content"></span>
+            </button>
+            <div class="image-avatar">
+              <img src="images/image-avatar.png" alt="">
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <section class="d-grid">
+        <article>
+          <div class="gallery">
+            <img class="gallery-icon previous" src="images/icon-previous.svg" alt="" srcset="">
+            <img class="main-image" src="images/image-product-1.jpg" alt="">
+            <img class="gallery-icon next" src="images/icon-next.svg" alt="" srcset="">
+          </div>
+          <div class="thumbnail">
+            <ul class="d-flex">
+              <li class="active" data-index="0"><img src="images/image-product-1-thumbnail.jpg" alt=""></li>
+              <li data-index="1"><img src="images/image-product-2-thumbnail.jpg" alt=""></li>
+              <li data-index="2"><img src="images/image-product-3-thumbnail.jpg" alt=""></li>
+              <li data-index="3"><img src="images/image-product-4-thumbnail.jpg" alt=""></li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <div class="product__description">
+            <span>Sneaker Company</span>
+            <h2>Fall Limited Edition Sneakers</h2>
+            <p>
+              These low-profile sneakers are your perfect casual wear companion. Featuring a
+              durable rubber outer sole, they’ll withstand everything the weather can offer.
+            </p>
+          </div>
+          <div class="product-price d-flex">
+            <span data-price="125.00">$125.00</span>
+            <span>$250.00</span>
+          </div>
+          <div class="call-to-action d-grid">
+            <div class="d-flex">
+              <img class="minus" src="images/icon-minus.svg" alt="">
+              <p data-id="1">1</p>
+              <img class="plus" src="images/icon-plus.svg" alt="">
+            </div>
+            <button class="call-btn"> <i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+
+
+  <dialog class="modal">
+    <h3 class="modal-title">Cart <img class="close-icon" src="images/icon-close.svg" alt=""></h3>
+    <p class="modal__content"> Your Cart is Empty.</p>
+    <section class="modal__content--products"></section>
+    <!-- <div class="product d-flex">
+      <div class="img-container">
+        <img class="product__image" src="" alt="">
+      </div>
+      <div class="text">
+        <p class="title">Fall Limited Edition ⵜⴰⵡⵏⵣⴰ products</p>
+        <p class="final-price">$120.00 * 2 $340.00</p>
+      </div>
+      <img src="images/icon-delete.svg">
+    </div>
+    <button class="modal__btn">Checkout</button> -->
+  </dialog>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">AHMED HRID</a>.
+  </div>
+</body>
+
+</html>
